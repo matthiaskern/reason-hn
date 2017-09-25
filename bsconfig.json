@@ -1,7 +1,13 @@
 {
   "name": "reason-scripts",
   "sources": ["src"],
-  "bs-dependencies": ["reason-react", "bs-jest", "bs-director", "bs-fetch"],
+  "bs-dependencies": [
+    "reason-react",
+    "bs-jest",
+    "bs-director",
+    "bs-fetch",
+    "bs-json"
+  ],
   "reason": {
     "react-jsx": 2
   },
