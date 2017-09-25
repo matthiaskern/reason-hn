@@ -49,7 +49,8 @@ let make ::id _children => {
             <div className="App-header"> (renderTitle story) (renderByline story) </div>
             <p className="App-intro"> <CommentList story /> </p>
           </div>
-        | None => ReasonReact.stringToElement "loading"
+        | None =>
+          <div className="App"> <div className="App-header"> (textEl "Loading...") </div> </div>
         };
       <div> commentList </div>
     }

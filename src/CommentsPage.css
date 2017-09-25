@@ -1,0 +1,8 @@
+.CommentsPage_titleLink {
+  color: white;
+  text-decoration: none;
+}
+
+.CommentsPage_titleLink:hover {
+  text-decoration: underline;
+}
