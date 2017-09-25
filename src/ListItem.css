@@ -13,6 +13,7 @@
 }
 
 .ListItem_storyCell {
+  text-align: left;
   flex: 1;
   flex-direction: column;
   flex-wrap: nowrap;

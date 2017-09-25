@@ -18,3 +18,7 @@ let fromNow unixtime => {
     string_of_int (delta / 86400) ^ " days ago"
   }
 };
+
+external internal_getAttribute : Js.t 'a => string => Js.null string = "getAttribute" [@@bs.send];
+
+let getAttribute node name => Js.Null.to_opt (internal_getAttribute node name);
