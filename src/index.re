@@ -1,7 +1,6 @@
 [%bs.raw {|require('./index.css')|}];
 
-external register_service_worker : unit => unit = "default" [@@bs.module "./registerServiceWorker"];
+Utils.register_service_worker ();
 
-ReactDOMRe.renderToElementWithId <App /> "root";
+ReactDOMRe.renderToElementWithId <App route=Routes.Front/> "root";
 
-register_service_worker ();
