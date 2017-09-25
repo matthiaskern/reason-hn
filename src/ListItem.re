@@ -23,7 +23,7 @@ let make story::(story:Api.story) index::(index: int) _children => {
     <div> link </div>
   };
 
- let renderByline () =>
+ let renderByLine () =>
   <div className="ListItem_row ListItem_byline">
       <span className="ListItem_number"> (intEl story.score) </span>
       (textEl " points")
@@ -38,7 +38,7 @@ let make story::(story:Api.story) index::(index: int) _children => {
     <div className="ListItem_flexRow">
       <div className="ListItem_storyCell">
         (renderTitle ())
-        (renderByline ())
+        (renderByLine ())
       </div>
     </div>;
 
@@ -48,6 +48,7 @@ let make story::(story:Api.story) index::(index: int) _children => {
         <div>
           <span className="ListItem_commentsText">
             <span className="ListItem_number"> (intEl story.descendants) </span>
+            <br />
             (textEl " comments")
           </span>
         </div>
